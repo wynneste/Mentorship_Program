@@ -1,0 +1,15 @@
+class Mentor : public User {
+public:
+    // Mentor-specific details and methods
+};
+
+class Mentee : public User {
+public:
+    // Mentee-specific details and methods
+};
+
+class Match {
+public:
+    Mentor* findMentor(const Mentee& mentee);
+    void requestMentorship(Mentor& mentor, Mentee& mentee);
+};
