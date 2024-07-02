@@ -1,0 +1,11 @@
+class Goal {
+public:
+    User* user;
+    std::string description;
+    std::string status;
+    std::string deadline;
+
+    void setGoal(User* user, const std::string& description, const std::string& deadline);
+    void updateGoalStatus(User* user, const std::string& status);
+    std::vector<Goal> getGoals(User* user);
+};
