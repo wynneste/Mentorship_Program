@@ -1,0 +1,10 @@
+class Message {
+public:
+    User* sender;
+    User* receiver;
+    std::string content;
+    std::string timestamp;
+
+    void sendMessage(User* sender, User* receiver, const std::string& content);
+    std::vector<Message> getMessages(User* user1, User* user2);
+};
