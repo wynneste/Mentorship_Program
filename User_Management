@@ -1,0 +1,12 @@
+class User {
+public:
+    std::string username;
+    std::string password;
+    std::string role; // "mentor" or "mentee"
+    // Other profile details
+
+    bool login(const std::string& user, const std::string& pass);
+    void registerUser(const std::string& user, const std::string& pass, const std::string& role);
+};
+
+// Implementation of login and register methods
