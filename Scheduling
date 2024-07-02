@@ -1,0 +1,10 @@
+class Appointment {
+public:
+    User* mentor;
+    User* mentee;
+    std::string date;
+    std::string time;
+
+    void scheduleAppointment(User* mentor, User* mentee, const std::string& date, const std::string& time);
+    std::vector<Appointment> getAppointments(User* user);
+};
